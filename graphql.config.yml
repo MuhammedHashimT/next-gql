@@ -1,0 +1,3 @@
+# overwrite: true
+schema: https://fuzzy-leggings-lion.cyclic.cloud/
+# documents: 'src/**/*.{graphql,js,ts,jsx,tsx}'

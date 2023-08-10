@@ -1,5 +1,5 @@
 import NavBar from '@/components/NavBar'
-import './globals.css'
+import '../globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
@@ -18,19 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className=''>
-        {/* <main className='min-h-screen flex flex-col justify-between'> */}
-          {/* <NavBar/> */}
-          {/* <main className='min-w-full min-h-full'> */}
-          {/* <GlobalContextProvider> */}
-            {children}
-            {/* </GlobalContextProvider> */}
+    // <html lang="en">
+    //   <body className={inter.className}>
+        <main className='min-h-screen flex flex-col justify-between'>
+          <NavBar/>
+          <main className='min-w-full min-h-full'>
+          <GlobalContextProvider>{children}</GlobalContextProvider>
     {/* {children} */}
-          {/* </main> */}
-          {/* <Footer/> */}
-        {/* </main> */}
-      </body>
-    </html>
+          </main>
+          <Footer/>
+        </main>
+    //   </body>
+    // </html>
   )
 }

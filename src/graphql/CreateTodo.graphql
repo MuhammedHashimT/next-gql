@@ -1,0 +1,23 @@
+mutation CreateTodo($text:String! , $status : Boolean!){
+    addTodo(text:$text , completed : $status){
+        text
+        completed
+        _id
+    }
+
+}
+
+mutation DeleteTodos($id:ID!){
+    deleteTodo(id:$id)
+}
+
+query GetOnes($id:ID!){
+
+    getOne(id:$id){
+         text
+        completed
+        _id
+    }
+
+    
+}

@@ -1,0 +1,9 @@
+mutation UpdateTodo( $text:String! , $status : Boolean! , $id : ID!){
+    updateTodo(text:$text , completed : $status , id : $id){
+          text
+        completed
+        _id
+    }
+
+    
+}

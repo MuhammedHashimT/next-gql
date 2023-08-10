@@ -1,0 +1,10 @@
+query GetOne($id:ID!){
+
+    getOne(id:$id){
+         text
+        completed
+        _id
+    }
+
+    
+}
